@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Table</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="search">
+                <form>
+                    <label for="search">
+                        <i class="fa fa-search"></i>
+                    </label>
+                    <input type="search" id="search" name="search"
+                        placeholder="Search contact">
+                </form>
+            </div> <!--search div-->
+            <div class="add_div">
+                <button class="addMember">
+                    <i class="fas fa-user-plus"></i>
+                    Add new contact
+                </button>
+            </div><!--Add member div-->
+        </header>
+        <section class="form">
+            <div class="addNewContact">
+                <i class="fas fa-user-plus"></i>
+                <form>
+                    <input type="text" name="fullName" id="contact_form_name" placeholder="Full name">
+                    <input type="text" name="phone" id="contact_form_phone" placeholder="Phone">
+                    <input type="email" name="email" id="contact_form_email" placeholder="E-mail">
+                    <input type="text" name="address" id="contact_form_address" placeholder="Address">
+                </form>
+                <button class="save btn">
+                    <i class="fa fa-save"></i> Save
+                </button>
+                <div class="close">
+                    <i class="fa fa-close"></i>
+                </div><!--Close-->
+            </div><!--AddNewContact-->
+        </section>
+        <section class="table_section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th><i class="fa-solid fa-user"></i> Name</th>
+                        <th><i class="fa-solid fa-phone-flip"></i> Phone</th>
+                        <th><i class="fa-solid fa-envelope"></i> E-mail</th>
+                        <th><i class="fa-solid fa-map-location-dot"></i> Address</th>
+                        <th><i class="fa-solid fa-pen"></i> Edit</th>
+                        <th><i class="fa-solid fa-user-xmark"></i> Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+main{
+    margin-top: 50px;
+}
+header{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+header .search{
+    background-color: rgb(36, 170, 159);
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+}
+header .search i{
+    font-size: 20px;
+    color: #888;
+}
+header .search input{
+    width: 80%;
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #444;
+}
+header .addMember{
+    padding: 10px 60px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(36, 170, 159);
+    color: #444;
+    font-size: 17px;
+    cursor: pointer;
+}
+/* *********Over lay********************** */
+.overlay{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+/* **************************************** */
+.addNewContact{
+    width: 40%;
+    background-color: rgb(36, 170, 159);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+    border: 2px solid rgb(192, 179, 179);
+    z-index: 2;
+    display: none;
+}
+.addNewContact > i{
+    font-size: 80px;
+    color: #444;
+}
+.addNewContact input{
+    width: 75%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: none;
+    color: #888;
+    font-size: 15px;
+}
+.addNewContact input:focus-visible{
+    border-bottom: 2px solid #444;
+}
+.addNewContact .btn{
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.addNewContact .btn:hover{
+    background-color: rgb(122, 211, 203);
+    border: none;
+}
+.addNewContact .close{
+    font-size: 20px;
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    cursor: pointer;
+}
+/* table */
+.table_section{
+    margin-top: 40px;
+}
+.table_section table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: #444;
+}
+th,td{
+    border: 1px solid #444;
+    padding: 10px 20px;
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(40, 207, 207);
+}
+tbody tr:nth-child(even){
+    background-color: rgba(129, 218, 218, 0.705);
+}
+.green{
+    color: green;
+    cursor: pointer;
+}
+.red{
+    color: red;
+    cursor: pointer;
+}
